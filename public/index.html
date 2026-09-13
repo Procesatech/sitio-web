@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Procesa · Renting tecnológico y soporte IT en Perú</title>
+<meta name="description" content="Renting tecnologico y soporte IT administrado en Peru. Equipos configurados, soporte incluido y renovacion programada. Procesa Tech SAC, Lima.">
+<link rel="canonical" href="https://procesa.com.pe/">
+<meta name="theme-color" content="#1B263B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%279%27%20fill%3D%27%231B263B%27%2F%3E%3Cg%20transform%3D%27translate%2832%2C32%29%20scale%280.48%29%20translate%28-49%2C-62.2%29%27%3E%3Cpath%20d%3D%22M20.25%2099.6%20V32%20A7.25%207.25%200%200%201%2027.5%2024.75%20H69.25%20A7.25%207.25%200%200%201%2076.5%2032%20V70.35%20A7.25%207.25%200%200%201%2069.25%2077.6%20H33%22%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%2215.5%22%2F%3E%3Crect%20x%3D%2211%22%20y%3D%2250.3%22%20width%3D%2219%22%20height%3D%222.2%22%20fill%3D%22%231B263B%22%2F%3E%3Crect%20x%3D%2266%22%20y%3D%2240.1%22%20width%3D%2221%22%20height%3D%222.2%22%20fill%3D%22%231B263B%22%2F%3E%3Crect%20x%3D%2233.4%22%20y%3D%2286.7%22%20width%3D%2211.3%22%20height%3D%2212.9%22%20fill%3D%22%232DD4BF%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_PE">
+<meta property="og:site_name" content="Procesa">
+<meta property="og:url" content="https://procesa.com.pe/">
+<meta property="og:title" content="Procesa · Equipos y soporte en operación">
+<meta property="og:description" content="Renting tecnologico y soporte IT administrado en Peru. Equipos configurados, soporte incluido y renovacion programada. Procesa Tech SAC, Lima.">
+<meta property="og:image" content="https://procesa.com.pe/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* ==========================================================
+   PROCESA — sistema visual PT-COM-001
+   Marino ancla · teal como señal · proporción 85/10/5
+   ========================================================== */
+:root{
+  --marino:#1B263B; --grafito:#2E3440; --niebla:#F4F5F7;
+  --teal-txt:#0F766E; --teal-neg:#2DD4BF; --teal-id:#0D9488;
+
+  --ground:#FFFFFF; --ground-alt:var(--niebla); --plate:var(--marino);
+  --ink:var(--grafito); --ink-soft:#525E6E; --ink-faint:#7A8595;
+  --line:#E2E5EA; --line-strong:#828D9C; --card:#FFFFFF;
+  --on-plate:#FFFFFF; --on-plate-soft:#AEB9C9;
+  --plate-line:rgba(255,255,255,.14);
+  --accent:var(--teal-txt); --rule:var(--teal-id);
+  --btn-bg:var(--marino); --btn-ink:#FFFFFF; --btn-hover:#0E1727;
+  --focus:var(--teal-txt);
+  --lift:0 1px 1px rgba(27,38,59,.04),0 12px 32px -18px rgba(27,38,59,.35);
+
+  --measure:64ch; --frame:1180px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0D131C; --ground-alt:#141D29; --plate:#16202F;
+    --ink:#E7EBF1; --ink-soft:#A3AEBE; --ink-faint:#7C8899;
+    --line:#232F40; --line-strong:#6B7A93; --card:#18222F;
+    --on-plate:#FFFFFF; --on-plate-soft:#AEB9C9;
+    --plate-line:rgba(255,255,255,.12);
+    --accent:var(--teal-neg); --rule:var(--teal-neg);
+    --btn-bg:var(--teal-neg); --btn-ink:#0F1C29; --btn-hover:#66E5D6;
+    --focus:var(--teal-neg);
+    --lift:0 1px 1px rgba(0,0,0,.4),0 14px 34px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0D131C; --ground-alt:#141D29; --plate:#16202F;
+  --ink:#E7EBF1; --ink-soft:#A3AEBE; --ink-faint:#7C8899;
+  --line:#232F40; --line-strong:#6B7A93; --card:#18222F;
+  --on-plate:#FFFFFF; --on-plate-soft:#AEB9C9;
+  --plate-line:rgba(255,255,255,.12);
+  --accent:var(--teal-neg); --rule:var(--teal-neg);
+  --btn-bg:var(--teal-neg); --btn-ink:#0F1C29; --btn-hover:#66E5D6;
+  --focus:var(--teal-neg);
+  --lift:0 1px 1px rgba(0,0,0,.4),0 14px 34px -18px rgba(0,0,0,.8);
+}
+
+#especializacion{--shot:url("/img/sectores.webp")}
+.tier--1 .photo{--shot:url("/img/nivel-1-estandar.webp")}
+.tier--2 .photo{--shot:url("/img/nivel-2-productividad.webp")}
+.tier--3 .photo{--shot:url("/img/nivel-3-workstation.webp")}
+.infra .photo{--shot:url("/img/infraestructura.webp")}
+
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:"IBM Plex Sans","Segoe UI","Helvetica Neue",Arial,sans-serif;
+  font-size:1rem;line-height:1.62;-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{margin:0;text-wrap:balance}
+h1{font-weight:700;font-size:clamp(2.35rem,1.3rem + 3.6vw,4.05rem);line-height:1.04;letter-spacing:-.035em}
+h2{font-weight:600;font-size:clamp(1.7rem,1.15rem + 2.1vw,2.7rem);line-height:1.13;letter-spacing:-.028em}
+h3{font-weight:600;font-size:1.0625rem;line-height:1.38;letter-spacing:-.012em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+.frame{width:100%;max-width:var(--frame);margin-inline:auto;padding-inline:clamp(22px,5vw,56px)}
+.mono{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-variant-numeric:tabular-nums}
+.sigbar{position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--rule);z-index:3}
+.sigbar--plate{background:var(--teal-neg)}
+
+/* ---------------- capa fotográfica ----------------
+   Se activa poniendo --shot en el contenedor. El duotono normaliza
+   cualquier foto al marino/teal de marca: no importa con qué color
+   venga la imagen, sale igual que las demás. */
+canvas[data-mesh]{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:1}
+
+/* El filtro va en una capa propia: si se aplica al contenedor, el
+   grayscale se ejecuta DESPUES del duotono y lo anula. */
+.shot{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;isolation:isolate}
+.shot::before{
+  content:"";position:absolute;inset:0;
+  background:var(--shot,none) center/cover no-repeat;
+  filter:grayscale(1) contrast(1.14) brightness(.84);opacity:.96;
+}
+.photo{position:relative;overflow:hidden;margin:0;isolation:isolate}
+.photo::before{
+  content:"";position:absolute;inset:0;
+  background:var(--shot,none) center/cover no-repeat;
+  filter:grayscale(1) contrast(1.0) brightness(.72);
+}
+.shot .tint,.photo .tint{
+  position:absolute;inset:0;
+  background:linear-gradient(135deg,#1B263B 0%,#0D9488 100%);
+  mix-blend-mode:color;opacity:.92;
+}
+.shot .tint{opacity:.58}
+.tier .photo{aspect-ratio:16/10;margin-bottom:3px}
+.infra .photo{aspect-ratio:4/3}
+.infra .body{display:grid;gap:12px}
+@media (min-width:820px){
+  .infra:has(.photo){grid-template-columns:minmax(0,320px) minmax(0,1fr);align-items:center;column-gap:clamp(28px,3.5vw,52px)}
+  .infra .photo{aspect-ratio:3/4}
+}
+
+/* grano fino: evita que el marino plano se lea como un bloque de CSS */
+.hero::before,.plate::before{
+  content:"";position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.plate{overflow:hidden}
+.plate .frame{position:relative;z-index:3}
+.plate .veil{
+  position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:linear-gradient(to right,#1B263B 0%,rgba(27,38,59,.9) 30%,rgba(27,38,59,.5) 62%,rgba(27,38,59,.15) 100%);
+}
+
+/* ---------------- portada ---------------- */
+.hero{position:relative;background:var(--marino);color:#fff;overflow:hidden;isolation:isolate;--shot:url("/img/portada-rack.webp")}
+.hero .veil{
+  position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:
+    linear-gradient(to top,rgba(27,38,59,.82) 0%,rgba(27,38,59,.3) 12%,rgba(27,38,59,0) 24%),
+    linear-gradient(to right,#1B263B 0%,rgba(27,38,59,.88) 26%,rgba(27,38,59,.32) 52%,rgba(27,38,59,0) 82%),
+    linear-gradient(to bottom,#1B263B 0%,rgba(27,38,59,.5) 18%,rgba(27,38,59,0) 42%);
+}
+.hero .frame{position:relative;z-index:3}
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;
+  padding-block:26px;border-bottom:1px solid var(--plate-line);
+}
+.brandline{display:flex;align-items:baseline;gap:13px;flex-wrap:wrap}
+.lockup{display:inline-flex;align-items:center;gap:12px}
+.isotipo{height:34px;width:auto;display:block;flex:none}
+.wordmark{font-size:1.4rem;font-weight:700;letter-spacing:-.025em}
+@media(max-width:520px){.isotipo{height:28px}}
+.descriptor{font-size:.8125rem;color:var(--on-plate-soft)}
+.ruc{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-size:.75rem;color:var(--on-plate-soft);letter-spacing:.02em}
+
+.herobody{padding-block:clamp(64px,9vw,124px) clamp(56px,7vw,96px)}
+.kicker{
+  font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-size:.6875rem;font-weight:500;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--teal-neg);margin-bottom:26px;
+}
+.hero h1{max-width:15ch}
+.hero .sub{margin-top:26px;max-width:52ch;font-size:clamp(1.0625rem,.98rem + .42vw,1.3125rem);color:#D5DCE6;line-height:1.55}
+.tagline{
+  margin-top:34px;padding-left:16px;border-left:2px solid var(--teal-neg);
+  font-family:"IBM Plex Mono",Consolas,Menlo,monospace;color:var(--teal-neg);
+  font-size:clamp(.9375rem,.88rem + .3vw,1.0625rem);
+}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:15px 28px;font:inherit;font-weight:600;font-size:.9375rem;
+  border:1px solid transparent;cursor:pointer;text-decoration:none;
+  transition:background-color .18s ease,border-color .18s ease,color .18s ease;
+}
+.btn-primary{background:var(--btn-bg);color:var(--btn-ink)}
+.btn-primary:hover{background:var(--btn-hover)}
+.hero .btn-primary{background:var(--teal-neg);color:#0F1C29}
+.hero .btn-primary:hover{background:#66E5D6}
+.btn-ghost{border-color:var(--line-strong);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink)}
+.hero .btn-ghost{border-color:rgba(255,255,255,.32);color:#fff}
+.hero .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+
+.metastrip{
+  position:relative;z-index:3;border-top:1px solid var(--plate-line);
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+}
+.meta{padding:26px 0 30px;padding-right:26px}
+.meta dt{font-size:.6875rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--on-plate-soft);margin:0 0 8px}
+.meta dd{margin:0;font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-size:.875rem;color:#fff;line-height:1.55}
+
+/* ---------------- secciones ---------------- */
+section{padding-block:clamp(68px,8vw,124px)}
+.alt{background:var(--ground-alt)}
+.plate{background:var(--plate);color:var(--on-plate);position:relative}
+.plate .lede{color:var(--on-plate-soft)}
+.plate .secno{color:var(--teal-neg)}
+
+.sechead{display:flex;flex-direction:column;gap:16px;margin-bottom:clamp(40px,4.5vw,64px)}
+.secno{
+  font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-weight:600;font-size:.75rem;
+  color:var(--accent);letter-spacing:.16em;order:-1;
+}
+.lede{color:var(--ink-soft);font-size:clamp(1.0625rem,1rem + .3vw,1.1875rem);max-width:var(--measure)}
+
+/* argumentos */
+.stack{display:grid;gap:clamp(30px,3.2vw,44px)}
+.argument{display:grid;gap:11px;padding-left:24px;border-left:1px solid var(--line-strong)}
+.plate .argument{border-left-color:var(--plate-line)}
+.argument h3{font-size:1.125rem}
+.argument p{color:var(--ink-soft);max-width:58ch}
+.plate .argument p{color:var(--on-plate-soft)}
+
+/* tarjetas */
+.grid3{display:grid;gap:1px;background:var(--line);border-block:1px solid var(--line)}
+@media (min-width:700px){.grid3{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1020px){.grid3{grid-template-columns:repeat(3,1fr)}}
+.cell{background:var(--card);padding:clamp(26px,2.8vw,38px);display:grid;gap:12px;align-content:start;transition:background-color .2s ease}
+.cell:hover{background:var(--ground-alt)}
+.cell p{color:var(--ink-soft);font-size:.9375rem}
+.figure{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-weight:600;font-size:2rem;color:var(--accent);letter-spacing:-.03em;line-height:1;margin-bottom:4px}
+
+/* niveles de categoría */
+.tiers{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:clamp(30px,3.2vw,44px)}
+@media (min-width:760px){.tiers{grid-template-columns:repeat(3,1fr)}}
+.tier{background:var(--card);padding:clamp(26px,2.8vw,36px);display:grid;gap:13px;align-content:start;transition:background-color .2s ease}
+.tier:hover{background:var(--ground-alt)}
+.level{display:flex;align-items:flex-end;gap:5px;height:22px}
+.level i{display:block;width:9px;background:var(--line-strong);transition:background-color .2s ease}
+.level i:nth-child(1){height:9px}
+.level i:nth-child(2){height:15px}
+.level i:nth-child(3){height:22px}
+.level i.on{background:var(--accent)}
+.tierlabel{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-size:.6875rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.tier h3{font-size:1.1875rem}
+.tier p{color:var(--ink-soft);font-size:.9375rem}
+
+/* tabla */
+.tablewrap{overflow-x:auto;border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:.9375rem}
+thead th{background:var(--marino);color:#fff;text-align:left;font-weight:600;font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;padding:16px 22px;white-space:nowrap}
+tbody td{padding:20px 22px;vertical-align:top;border-top:1px solid var(--line);color:var(--ink-soft);background:var(--card);transition:background-color .18s ease}
+tbody tr:nth-child(even) td{background:var(--ground-alt)}
+tbody tr:hover td{background:var(--ground-alt)}
+tbody td:first-child{color:var(--ink);font-weight:600;white-space:nowrap}
+td.spec{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-size:.8125rem}
+.tablenote{margin-top:18px;font-size:.875rem;color:var(--ink-soft);max-width:var(--measure)}
+
+/* infraestructura */
+.infra{position:relative;background:var(--card);border:1px solid var(--line);padding:clamp(28px,3.2vw,44px);margin-top:clamp(30px,3.2vw,44px);display:grid;gap:14px;box-shadow:var(--lift)}
+.infra p{color:var(--ink-soft);max-width:58ch}
+
+/* proceso */
+.steps{border-top:1px solid var(--line)}
+.step{display:grid;grid-template-columns:auto 1fr;gap:14px 24px;padding-block:28px;border-bottom:1px solid var(--line);transition:background-color .18s ease}
+@media (min-width:840px){.step{grid-template-columns:64px minmax(0,16rem) minmax(0,1fr);gap:32px;align-items:baseline}}
+.step .n{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-weight:600;font-size:.875rem;color:var(--accent)}
+.step p{color:var(--ink-soft);grid-column:1/-1}
+@media (min-width:840px){.step p{grid-column:auto}}
+
+/* contacto */
+.split{display:grid;gap:clamp(28px,3.5vw,56px)}
+@media (min-width:880px){.split{grid-template-columns:minmax(0,8fr) minmax(0,4fr);align-items:start}}
+.formcard{position:relative;background:var(--card);border:1px solid var(--line);padding:clamp(26px,3vw,42px);box-shadow:var(--lift)}
+.formgrid{display:grid;gap:20px;grid-template-columns:1fr}
+@media (min-width:640px){.formgrid{grid-template-columns:1fr 1fr}}
+.field{display:grid;gap:8px}
+.field.wide{grid-column:1/-1}
+label{font-size:.6875rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+input,select,textarea{font:inherit;font-size:.9375rem;color:var(--ink);background:var(--ground);border:1px solid var(--line-strong);padding:12px 14px;width:100%;border-radius:0;transition:border-color .18s ease}
+input:hover,select:hover,textarea:hover{border-color:var(--ink-soft)}
+input:focus,select:focus,textarea:focus{border-color:var(--accent);outline:none}
+textarea{min-height:118px;resize:vertical}
+select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 15px) 50%;background-size:5px 5px,5px 5px;background-repeat:no-repeat;padding-right:40px}
+.formfoot{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:28px}
+.formnote{font-size:.8125rem;color:var(--ink-faint);max-width:42ch}
+.formnote a,.consent a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--line-strong)}
+.formnote a:hover,.consent a:hover{border-bottom-color:var(--accent)}
+.consent{display:flex;gap:11px;align-items:flex-start;margin-top:28px;max-width:60ch}
+.consent input{flex:none;width:17px;height:17px;margin-top:2px;accent-color:var(--teal-id)}
+.consent label{font-size:.875rem;font-weight:400;letter-spacing:0;text-transform:none;line-height:1.55;color:var(--ink-soft)}
+.consent input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.contactcard{display:grid;gap:28px;align-content:start}
+.cblock{display:grid;gap:6px}
+.cblock .k{font-size:.6875rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint)}
+.cblock .v{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-size:.9375rem;line-height:1.6}
+.cblock .v a{text-decoration:none;border-bottom:1px solid var(--line-strong)}
+.cblock .v a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+.waico{width:1em;height:1em;flex:none}
+.walink{display:inline-flex;align-items:center;gap:8px}
+.wafab{
+  position:fixed;right:20px;bottom:20px;z-index:50;
+  display:inline-flex;align-items:center;gap:10px;
+  padding:13px 18px;border-radius:999px;
+  background:var(--marino);color:#fff;text-decoration:none;
+  border:1px solid rgba(255,255,255,.24);
+  font-size:.875rem;font-weight:600;letter-spacing:-.01em;
+  box-shadow:0 6px 24px rgba(15,23,35,.28);
+  transition:background .18s,box-shadow .18s;
+}
+.wafab:hover{background:#0E1727;box-shadow:0 8px 30px rgba(15,23,35,.38)}
+.wafab:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+.waico--fab{width:19px;height:19px}
+@media(max-width:600px){
+  .wafab{right:14px;bottom:14px;padding:14px;gap:0}
+  .wafab span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .waico--fab{width:22px;height:22px}
+}
+@media print{.wafab{display:none}}
+.cdivider{width:44px;height:2px;background:var(--rule)}
+
+/* pie */
+footer{background:var(--marino);color:#fff;position:relative;padding-block:clamp(52px,5.5vw,76px)}
+.footgrid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px 48px;align-items:flex-end}
+.foottag{margin-top:16px;font-family:"IBM Plex Mono",Consolas,Menlo,monospace;color:var(--teal-neg);font-size:.9375rem}
+.footmeta{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-size:.8125rem;color:var(--on-plate-soft);line-height:1.9}
+.footmeta a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.26)}
+.footmeta a:hover{border-bottom-color:#fff;color:#fff}
+</style>
+</head>
+<body>
+<!-- ========================= PORTADA ========================= -->
+<header class="hero">
+  <span class="sigbar sigbar--plate" aria-hidden="true"></span>
+  <div class="shot" aria-hidden="true"><span class="tint"></span></div>
+  <canvas data-mesh aria-hidden="true"></canvas>
+  <span class="veil" aria-hidden="true"></span>
+
+  <div class="frame">
+    <div class="topbar">
+      <div class="brandline">
+        <span class="lockup"><svg class="isotipo" viewBox="0 0 100 114" role="img" aria-label="Procesa"><path d="M20.25 99.6 V32 A7.25 7.25 0 0 1 27.5 24.75 H69.25 A7.25 7.25 0 0 1 76.5 32 V70.35 A7.25 7.25 0 0 1 69.25 77.6 H33" fill="none" stroke="#FFFFFF" stroke-width="15.5"/><rect x="11" y="50.3" width="19" height="2.2" fill="#1B263B"/><rect x="66" y="40.1" width="21" height="2.2" fill="#1B263B"/><rect x="33.4" y="86.7" width="11.3" height="12.9" fill="#2DD4BF"/></svg><span class="wordmark">Procesa</span></span>
+        <span class="descriptor">Equipos y soporte en operación</span>
+      </div>
+      <span class="ruc">RUC 20616422210</span>
+    </div>
+
+    <div class="herobody">
+      <p class="kicker">Renting tecnológico · Soporte IT administrado</p>
+      <h1>Su operación no se detiene por un equipo.</h1>
+      <p class="sub">Entregamos los equipos configurados, incluimos el soporte IT y programamos la renovación. Usted opera; nosotros nos encargamos de la tecnología.</p>
+      <p class="tagline">Tu operación nunca se detiene.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#contacto">Solicitar una propuesta</a>
+        <a class="btn btn-ghost" href="#categorias">Ver categorías de equipo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="frame">
+    <dl class="metastrip">
+      <div class="meta"><dt>Sectores</dt><dd>Minería · Ingeniería<br>Construcción · Corporativo</dd></div>
+      <div class="meta"><dt>Contrato</dt><dd>12 a 24 meses<br>Soporte incluido</dd></div>
+      <div class="meta"><dt>Cobertura</dt><dd>Lima y provincia<br>Atención en sitio</dd></div>
+      <div class="meta"><dt>Empresa</dt><dd>Procesa Tech SAC<br>Lima, Perú</dd></div>
+    </dl>
+  </div>
+</header>
+
+<!-- ========================= 01 ========================= -->
+<section id="renting">
+  <div class="frame">
+    <div class="sechead">
+      <span class="secno">01</span>
+      <h2>Comprar equipos resuelve este año y complica los tres siguientes.</h2>
+      <p class="lede">El problema casi nunca es la compra. Es lo que viene después: la renovación que nadie presupuestó y el soporte que termina absorbiendo a su gente de operaciones.</p>
+    </div>
+    <div class="stack">
+      <div class="argument">
+        <h3>Capital inmovilizado en activos que se deprecian</h3>
+        <p>Una flota de diez equipos son decenas de miles de soles fuera del negocio, perdiendo valor cada mes. En renting es un gasto mensual deducible y el capital se queda donde produce retorno.</p>
+      </div>
+      <div class="argument">
+        <h3>Obsolescencia sin plan de reemplazo</h3>
+        <p>El equipo que compró hace cuatro años ya no corre el software que su gente necesita hoy, y la reposición compite con todo lo demás en el presupuesto. La renovación programada saca esa decisión de la mesa.</p>
+      </div>
+      <div class="argument">
+        <h3>Soporte que lo resuelve quien puede, no quien debe</h3>
+        <p>Cuando una laptop falla, alguien de operaciones deja de operar para resolverla. El soporte va incluido en la tarifa mensual, no en las horas de su equipo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 02 ========================= -->
+<section class="alt" id="servicio">
+  <div class="frame">
+    <div class="sechead">
+      <span class="secno">02</span>
+      <h2>Una tarifa mensual. Todo lo que hace falta para que el equipo trabaje.</h2>
+      <p class="lede">No alquilamos laptops. Garantizamos que la tecnología correcta esté funcionando, sin que usted tenga que comprarla, mantenerla ni renovarla.</p>
+    </div>
+    <div class="grid3">
+      <div class="cell">
+        <h3>Equipo listo desde el día uno</h3>
+        <p>Imagen estándar, cifrado activo, software del puesto instalado y activado. Se entrega con acta y guía de primer uso: el usuario arranca trabajando, no configurando.</p>
+      </div>
+      <div class="cell">
+        <h3>Soporte IT incluido</h3>
+        <p>Atención remota y presencial durante toda la vigencia del contrato, con escalamiento definido y reemplazo ante falla según lo acordado. Sin bolsas de horas ni facturas por incidencia.</p>
+      </div>
+      <div class="cell">
+        <h3>Gestión remota de la flota</h3>
+        <p>Parches, inventario y control de configuración desde consola de administración. El equipo se mantiene al día sin interrumpir al usuario ni pedirle que haga nada.</p>
+      </div>
+      <div class="cell">
+        <p class="figure">24 meses</p>
+        <h3>Renovación programada</h3>
+        <p>Al cierre del contrato el equipo se renueva. Sin decisión de compra que postergar y sin activos obsoletos acumulándose en el balance.</p>
+      </div>
+      <div class="cell">
+        <h3>Trazabilidad por activo</h3>
+        <p>Cada equipo tiene su código, su acta de entrega y su historial de atenciones. Usted sabe qué tiene, quién lo usa y qué le ha pasado.</p>
+      </div>
+      <div class="cell">
+        <h3>Contrato y factura formal</h3>
+        <p>Operación documentada de principio a fin: contrato de renting, factura mensual, gasto deducible e IGV trasladado. Lo que su área contable y su auditoría necesitan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 03 ========================= -->
+<section id="categorias">
+  <div class="frame">
+    <div class="sechead">
+      <span class="secno">03</span>
+      <h2>Categorías de equipo</h2>
+      <p class="lede">La categoría no la define la marca del equipo ni su precio de compra. La definen tres cosas: la capacidad del equipo, la exigencia del software que corre y el entorno donde va a operar.</p>
+    </div>
+
+    <div class="tiers">
+      <div class="tier tier--1">
+        <figure class="photo" aria-hidden="true"><span class="tint"></span></figure>
+        <span class="level" aria-hidden="true"><i class="on"></i><i></i><i></i></span>
+        <span class="tierlabel">Nivel 1 · Estándar</span>
+        <h3>Puesto administrativo</h3>
+        <p>Ofimática, correo corporativo y ERP. Sin GPU dedicada. El volumen de la flota, donde el soporte pesa más que el hardware.</p>
+      </div>
+      <div class="tier tier--2">
+        <figure class="photo" aria-hidden="true"><span class="tint"></span></figure>
+        <span class="level" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span>
+        <span class="tierlabel">Nivel 2 · Productividad</span>
+        <h3>Operaciones y dirección</h3>
+        <p>Procesador de gama alta y memoria ampliada, para quien vive en hojas de cálculo con modelo, diseño y varias aplicaciones abiertas a la vez.</p>
+      </div>
+      <div class="tier tier--3">
+        <figure class="photo" aria-hidden="true"><span class="tint"></span></figure>
+        <span class="level" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></span>
+        <span class="tierlabel">Nivel 3 · Workstation</span>
+        <h3>Topografía y GIS</h3>
+        <p>GPU dedicada y pantalla calibrable para AutoCAD, Civil 3D, ArcGIS y procesamiento fotogramétrico. Donde casi no hay oferta estructurada en el país.</p>
+      </div>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Categoría</th>
+            <th scope="col">Perfil de uso</th>
+            <th scope="col">Configuración</th>
+            <th scope="col">Software típico</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Estándar</td>
+            <td>Puestos administrativos, comerciales y de atención</td>
+            <td class="spec">Sin GPU dedicada · 8–16 GB RAM · SSD</td>
+            <td>Ofimática, correo corporativo, ERP</td>
+          </tr>
+          <tr>
+            <td>Productividad</td>
+            <td>Operaciones, dirección, marketing y análisis</td>
+            <td class="spec">Procesador de gama alta · 16–32 GB RAM</td>
+            <td>Ofimática pesada, diseño, hojas de cálculo con modelo</td>
+          </tr>
+          <tr>
+            <td>Workstation Performance</td>
+            <td>Topografía, procesamiento de datos y GIS</td>
+            <td class="spec">GPU dedicada · memoria ampliada · pantalla calibrable</td>
+            <td>AutoCAD, Civil 3D, ArcGIS, procesamiento fotogramétrico</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tablenote">Las configuraciones para faena y los equipos que requieren certificación del fabricante del software se evalúan caso por caso. La tarifa se cotiza por categoría y perfil de uso, nunca por el costo del equipo: así el precio no se dispara con un equipo caro ni queda corto con uno económico.</p>
+
+    <div class="infra">
+      <span class="sigbar" aria-hidden="true"></span>
+      <figure class="photo" aria-hidden="true"><span class="tint"></span></figure>
+      <div class="body">
+      <span class="tierlabel">Por proyecto</span>
+      <h3>Infraestructura</h3>
+      <p>Servidores, almacenamiento en red y equipamiento de sala para las operaciones que lo necesitan. Se dimensiona por proyecto y se contrata con el mismo modelo del resto de la flota: contrato firmado, equipo instalado y configurado, soporte incluido y renovación programada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 04 ========================= -->
+<section class="plate" id="especializacion">
+  <span class="sigbar sigbar--plate" aria-hidden="true"></span>
+  <div class="shot" aria-hidden="true"><span class="tint"></span></div>
+  <span class="veil" aria-hidden="true"></span>
+  <div class="frame">
+    <div class="sechead">
+      <span class="secno">04</span>
+      <h2>La diferencia no está en el equipo. Está en entender dónde va a trabajar.</h2>
+      <p class="lede">Un proveedor genérico entrega la misma laptop a una oficina de San Isidro, a una obra en Chilca y a un campamento a cuatro mil metros. No es lo mismo, y la operación lo termina pagando.</p>
+    </div>
+    <div class="stack">
+      <div class="argument">
+        <h3>Fuera de la ciudad no hay tienda ni mensajería del día siguiente</h3>
+        <p>Un equipo detenido en una faena, una planta o una obra no cuesta horas: cuesta días de avance. Por eso toda atención sobre un equipo fuera de la ciudad sube de prioridad de forma automática y el reemplazo se evalúa desde el primer momento, no cuando ya se agotaron las demás opciones.</p>
+      </div>
+      <div class="argument">
+        <h3>El software pesado no corre en cualquier máquina</h3>
+        <p>Civil 3D, ArcGIS, un ERP con varios módulos abiertos o el procesamiento de nubes de puntos tienen requisitos concretos de GPU y memoria. Clasificamos el equipo por lo que el usuario realmente corre, no por lo que dice la ficha comercial del fabricante.</p>
+      </div>
+      <div class="argument">
+        <h3>Nos medimos contra el estándar más exigente del mercado</h3>
+        <p>Contrato formal, facturación, trazabilidad de activos y procedimientos escritos. Es lo que exige una homologación minera, la más dura del mercado peruano — y es con lo que operamos desde el primer equipo entregado, sea quien sea el cliente que lo reciba.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 05 ========================= -->
+<section class="alt" id="proceso">
+  <div class="frame">
+    <div class="sechead">
+      <span class="secno">05</span>
+      <h2>Cómo funciona</h2>
+      <p class="lede">Cinco pasos, en este orden. El tercero es una regla de la casa y no se salta.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="n">01</span><h3>Levantamiento de perfiles</h3><p>Qué hace cada usuario y qué software corre. De ahí sale la categoría de su equipo, no de un catálogo de modelos.</p></div>
+      <div class="step"><span class="n">02</span><h3>Propuesta por categorías</h3><p>Una tarifa mensual por categoría, con el alcance del soporte y las condiciones de reemplazo por escrito.</p></div>
+      <div class="step"><span class="n">03</span><h3>Contrato firmado, después la compra</h3><p>De 12 a 24 meses. El equipo se adquiere una vez firmado el contrato, nunca antes: es lo que garantiza que lo que llega es exactamente lo acordado y no lo que había en stock.</p></div>
+      <div class="step"><span class="n">04</span><h3>Entrega en operación</h3><p>Equipo configurado, acta de entrega firmada y guía de primer uso. El usuario recibe una máquina lista, no un proyecto pendiente.</p></div>
+      <div class="step"><span class="n">05</span><h3>Operación y renovación</h3><p>Soporte incluido durante toda la vigencia y renovación programada al cierre. Si la operación crece, la flota crece con ella.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 06 ========================= -->
+<section id="soporte">
+  <div class="frame">
+    <div class="sechead">
+      <span class="secno">06</span>
+      <h2>El soporte no es una promesa del contrato. Es un procedimiento con registro.</h2>
+      <p class="lede">Cualquiera puede escribir «soporte incluido» en una propuesta. La diferencia está en si existe un procedimiento detrás y si queda evidencia de cada atención.</p>
+    </div>
+    <div class="grid3">
+      <div class="cell">
+        <h3>Un canal formal, sin cambiarle el hábito al usuario</h3>
+        <p>El usuario reporta por donde le resulta natural: WhatsApp, llamada o correo. Nosotros acusamos por correo con número de ticket y desde ahí corre el hilo formal de la atención.</p>
+      </div>
+      <div class="cell">
+        <p class="figure">3 niveles</p>
+        <h3>Escalamiento definido</h3>
+        <p>Atención remota, banco de trabajo o atención presencial, y activación de garantía o reemplazo. Se escala cuando se ve que el nivel actual no va a alcanzar, no cuando ya se incumplió.</p>
+      </div>
+      <div class="cell">
+        <h3>Todo queda registrado</h3>
+        <p>Cada atención con su equipo, su causa raíz y su tiempo invertido. Es lo que permite corregir el procedimiento cuando un problema se repite, en vez de resolverlo dos veces.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= 07 ========================= -->
+<section class="alt" id="contacto">
+  <div class="frame">
+    <div class="sechead">
+      <span class="secno">07</span>
+      <h2>Cuéntenos qué necesita en operación</h2>
+      <p class="lede">Con el número de puestos y el software que corren podemos preparar una propuesta con categorías y tarifa mensual. Sin compromiso y sin visita comercial de por medio si no la quiere.</p>
+    </div>
+    <div class="split">
+      <div class="formcard">
+        <span class="sigbar" aria-hidden="true"></span>
+        <form name="contacto" method="POST" action="/gracias.html" data-netlify="true" netlify-honeypot="empresa-web">
+          <input type="hidden" name="form-name" value="contacto">
+          <p hidden><label>No llenar: <input name="empresa-web"></label></p>
+          <div class="formgrid">
+            <div class="field"><label for="f-nombre">Nombre y apellido</label><input id="f-nombre" name="nombre" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-empresa">Empresa</label><input id="f-empresa" name="empresa" type="text" autocomplete="organization" required></div>
+            <div class="field"><label for="f-cargo">Cargo</label><input id="f-cargo" name="cargo" type="text" autocomplete="organization-title"></div>
+            <div class="field"><label for="f-email">Correo corporativo</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="f-tel">Teléfono</label><input id="f-tel" name="telefono" type="tel" autocomplete="tel"></div>
+            <div class="field"><label for="f-equipos">Puestos a cubrir</label>
+              <select id="f-equipos" name="puestos">
+                <option>1 a 5</option><option>6 a 15</option><option>16 a 40</option><option>Más de 40</option><option>Aún por definir</option>
+              </select>
+            </div>
+            <div class="field wide"><label for="f-detalle">Qué necesita y para qué áreas</label>
+              <textarea id="f-detalle" name="detalle" placeholder="Ejemplo: cuatro puestos de topografía que corren Civil 3D en proyecto de campo, más seis administrativos en oficina de Lima."></textarea>
+            </div>
+          </div>
+          <div class="consent">
+            <input id="f-consent" name="consentimiento" type="checkbox" value="si" required>
+            <label for="f-consent">Autorizo a Procesa Tech SAC a tratar mis datos personales para responder esta consulta y prepararme una propuesta, según el <a href="/privacidad.html">aviso de privacidad</a>.</label>
+          </div>
+          <div class="formfoot">
+            <button class="btn btn-primary" type="submit">Enviar solicitud</button>
+            <p class="formnote">Solo los usamos para responderle. No enviamos campañas ni cedemos sus datos. Puede pedir su eliminación cuando quiera — ver el <a href="/privacidad.html">aviso de privacidad</a>.</p>
+          </div>
+        </form>
+      </div>
+      <div class="contactcard">
+        <div class="cblock"><span class="k">Comercial</span><span class="v"><a href="mailto:comercial@procesa.com.pe">comercial@procesa.com.pe</a></span></div>
+        <div class="cblock"><span class="k">Soporte a clientes</span><span class="v"><a href="mailto:soporte@procesa.com.pe">soporte@procesa.com.pe</a></span></div>
+        <div class="cblock"><span class="k">Teléfono · WhatsApp</span><span class="v"><a href="tel:+51940886429">+51 940 886 429</a><br><a class="walink" href="https://wa.me/51940886429?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20el%20renting%20de%20equipos%20de%20Procesa." target="_blank" rel="noopener"><svg class="waico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>Escribir por WhatsApp</a></span></div>
+        <div class="cblock"><span class="k">Operación</span><span class="v">Lima, Perú<br>Atención en faena a nivel nacional</span></div>
+        <span class="cdivider" aria-hidden="true"></span>
+        <div class="cblock"><span class="k">Razón social · RUC</span><span class="v">Procesa Tech SAC<br>RUC 20616422210</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= PIE ========================= -->
+<footer>
+  <span class="sigbar sigbar--plate" aria-hidden="true"></span>
+  <div class="frame">
+    <div class="footgrid">
+      <div>
+        <div class="brandline">
+          <span class="lockup"><svg class="isotipo" viewBox="0 0 100 114" role="img" aria-label="Procesa"><path d="M20.25 99.6 V32 A7.25 7.25 0 0 1 27.5 24.75 H69.25 A7.25 7.25 0 0 1 76.5 32 V70.35 A7.25 7.25 0 0 1 69.25 77.6 H33" fill="none" stroke="#FFFFFF" stroke-width="15.5"/><rect x="11" y="50.3" width="19" height="2.2" fill="#1B263B"/><rect x="66" y="40.1" width="21" height="2.2" fill="#1B263B"/><rect x="33.4" y="86.7" width="11.3" height="12.9" fill="#2DD4BF"/></svg><span class="wordmark">Procesa</span></span>
+          <span class="descriptor">Equipos y soporte en operación</span>
+        </div>
+        <p class="foottag">Tu operación nunca se detiene.</p>
+      </div>
+      <p class="footmeta">
+        Procesa Tech SAC · RUC 20616422210<br>
+        Lima, Perú<br>
+        <a href="mailto:comercial@procesa.com.pe">comercial@procesa.com.pe</a><br>
+        <a href="tel:+51940886429">+51 940 886 429</a><br>
+        procesa.com.pe<br>
+        <a href="/privacidad.html">Aviso de privacidad</a>
+      </p>
+    </div>
+  </div>
+</footer>
+<a class="wafab" href="https://wa.me/51940886429?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20el%20renting%20de%20equipos%20de%20Procesa." target="_blank" rel="noopener" aria-label="Escribir a Procesa por WhatsApp"><svg class="waico waico--fab" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg><span>WhatsApp</span></a>
+
+
+<script>
+/* --- malla de terreno: lo que ve un levantamiento topográfico --- */
+(function () {
+  var nodes = document.querySelectorAll('canvas[data-mesh]');
+  if (!nodes.length) return;
+  Array.prototype.forEach.call(nodes, function (cv) {
+  if (!cv.getContext) return;
+  var ctx = cv.getContext('2d');
+  var flip = cv.hasAttribute('data-flip');
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var phase = 0, W = 0, H = 0;
+
+  function size() {
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = cv.clientWidth; H = cv.clientHeight;
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  function elev(i, j) {
+    return Math.sin(i * 0.34 + j * 0.21 + phase)
+         + Math.sin(i * 0.13 - j * 0.37 + phase * 0.6) * 0.78
+         + Math.sin(i * 0.61 + j * 0.17) * 0.42;
+  }
+
+  function draw() {
+    if (!W || !H) return;
+    ctx.clearRect(0, 0, W, H);
+    var COLS = 46, ROWS = 28, horizon = H * 0.40, grid = [];
+
+    for (var j = 0; j <= ROWS; j++) {
+      var t = j / ROWS, depth = Math.pow(t, 1.85);
+      var baseY = horizon + depth * (H - horizon) * 1.22;
+      var spread = 0.34 + t * 1.55, row = [];
+      for (var i = 0; i <= COLS; i++) {
+        var u = flip ? (0.5 - i / COLS) : (i / COLS - 0.5);
+        var x = W / 2 + u * W * spread;
+        row.push([x, baseY - elev(i, j) * (6 + 48 * t), t]);
+      }
+      grid.push(row);
+    }
+
+    ctx.lineWidth = 1;
+    for (var r = 0; r <= ROWS; r++) {
+      var a = 0.035 + Math.pow(grid[r][0][2], 1.3) * 0.4;
+      ctx.strokeStyle = 'rgba(45,212,191,' + a.toFixed(3) + ')';
+      ctx.beginPath();
+      for (var c = 0; c <= COLS; c++) {
+        var p = grid[r][c];
+        if (c === 0) ctx.moveTo(p[0], p[1]); else ctx.lineTo(p[0], p[1]);
+      }
+      ctx.stroke();
+    }
+    for (var c2 = 0; c2 <= COLS; c2 += 1) {
+      ctx.beginPath();
+      for (var r2 = 0; r2 <= ROWS; r2++) {
+        var q = grid[r2][c2];
+        if (r2 === 0) ctx.moveTo(q[0], q[1]); else ctx.lineTo(q[0], q[1]);
+      }
+      ctx.strokeStyle = 'rgba(45,212,191,' + (0.04 + grid[ROWS][c2][2] * 0.14).toFixed(3) + ')';
+      ctx.stroke();
+    }
+    for (var r3 = Math.floor(ROWS * 0.55); r3 <= ROWS; r3++) {
+      var av = (grid[r3][0][2] - 0.5) * 1.5;
+      if (av <= 0) continue;
+      ctx.fillStyle = 'rgba(45,212,191,' + av.toFixed(3) + ')';
+      for (var c3 = 0; c3 <= COLS; c3 += 2) {
+        var v = grid[r3][c3];
+        ctx.fillRect(v[0] - 1, v[1] - 1, 2, 2);
+      }
+    }
+  }
+
+  function loop() { phase += 0.0022; draw(); requestAnimationFrame(loop); }
+
+  size(); draw();
+  if (!reduce) requestAnimationFrame(loop);
+  var t0;
+  window.addEventListener('resize', function () {
+    clearTimeout(t0); t0 = setTimeout(function () { size(); draw(); }, 120);
+  });
+  });
+})();
+
+</script>
+</body>
+</html>

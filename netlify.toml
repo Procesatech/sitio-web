@@ -1,0 +1,6 @@
+# Sitio estatico: no hay proceso de compilacion, solo se publica la carpeta public/.
+[build]
+  publish = "public"
+  command = ""
+
+# Las cabeceras de seguridad viven en public/_headers.

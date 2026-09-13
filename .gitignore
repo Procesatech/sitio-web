@@ -1,0 +1,11 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+
+# Paquetes armados a mano (ya no hacen falta con despliegue continuo)
+*.zip
