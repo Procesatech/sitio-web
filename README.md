@@ -51,3 +51,16 @@ publicandose la version equivocada. Esa es la razon de ser de este repositorio.
 
 El documento de gestion es el PT-COM-003, en el repositorio documental de
 Procesa y en el proyecto de Claude.
+
+
+## Visibilidad del repositorio
+
+Este repositorio es publico a proposito. Netlify en plan gratuito no despliega
+repositorios privados que pertenecen a una organizacion; hacerlo publico fue la
+alternativa a pagar Pro. Todo lo que contiene ya se sirve abierto en
+procesa.com.pe, asi que no se pierde nada.
+
+Regla que si cambia: nunca subir a este repositorio una clave, un token, una
+credencial de correo ni ningun dato de un cliente. Quedarian publicos al instante.
+Regla que si cambia: nunca subir aqui una clave, un token, una credencial de correo
+ni datos de un cliente. Quedarian publicos al instante.
