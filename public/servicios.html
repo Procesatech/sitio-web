@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Procesa · Soluciones digitales para la operación</title>
+<meta name="description" content="La segunda linea de Procesa: software propio para rendiciones de gasto, recursos humanos y gestion documental, implementado sobre el Microsoft 365 del propio cliente. Cotizacion por proyecto.">
+<link rel="canonical" href="https://procesa.com.pe/servicios.html">
+<meta name="theme-color" content="#1B263B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%279%27%20fill%3D%27%231B263B%27%2F%3E%3Cg%20transform%3D%27translate%2832%2C32%29%20scale%280.48%29%20translate%28-49%2C-62.2%29%27%3E%3Cpath%20d%3D%22M20.25%2099.6%20V32%20A7.25%207.25%200%200%201%2027.5%2024.75%20H69.25%20A7.25%207.25%200%200%201%2076.5%2032%20V70.35%20A7.25%207.25%200%200%201%2069.25%2077.6%20H33%22%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%2215.5%22%2F%3E%3Crect%20x%3D%2211%22%20y%3D%2250.3%22%20width%3D%2219%22%20height%3D%222.2%22%20fill%3D%22%231B263B%22%2F%3E%3Crect%20x%3D%2266%22%20y%3D%2240.1%22%20width%3D%2221%22%20height%3D%222.2%22%20fill%3D%22%231B263B%22%2F%3E%3Crect%20x%3D%2233.4%22%20y%3D%2286.7%22%20width%3D%2211.3%22%20height%3D%2212.9%22%20fill%3D%22%232DD4BF%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_PE">
+<meta property="og:site_name" content="Procesa">
+<meta property="og:url" content="https://procesa.com.pe/servicios.html">
+<meta property="og:title" content="Procesa · Soluciones digitales">
+<meta property="og:description" content="Software propio para rendiciones de gasto, recursos humanos y gestion documental, sobre el Microsoft 365 del propio cliente.">
+<meta property="og:image" content="https://procesa.com.pe/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* ==========================================================
+   PROCESA — sistema visual PT-COM-001
+   Marino ancla · teal como señal · proporción 85/10/5
+   ========================================================== */
+:root{
+  --marino:#1B263B; --grafito:#2E3440; --niebla:#F4F5F7;
+  --teal-txt:#0F766E; --teal-neg:#2DD4BF; --teal-id:#0D9488;
+
+  --ground:#FFFFFF; --ground-alt:var(--niebla); --plate:var(--marino);
+  --ink:var(--grafito); --ink-soft:#525E6E; --ink-faint:#7A8595;
+  --line:#E2E5EA; --line-strong:#828D9C; --card:#FFFFFF;
+  --on-plate:#FFFFFF; --on-plate-soft:#AEB9C9;
+  --plate-line:rgba(255,255,255,.14);
+  --accent:var(--teal-txt); --rule:var(--teal-id);
+  --btn-bg:var(--marino); --btn-ink:#FFFFFF; --btn-hover:#0E1727;
+  --focus:var(--teal-txt);
+  --lift:0 1px 1px rgba(27,38,59,.04),0 12px 32px -18px rgba(27,38,59,.35);
+
+  --measure:64ch; --frame:1180px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0D131C; --ground-alt:#141D29; --plate:#16202F;
+    --ink:#E7EBF1; --ink-soft:#A3AEBE; --ink-faint:#7C8899;
+    --line:#232F40; --line-strong:#6B7A93; --card:#18222F;
+    --on-plate:#FFFFFF; --on-plate-soft:#AEB9C9;
+    --plate-line:rgba(255,255,255,.12);
+    --accent:var(--teal-neg); --rule:var(--teal-neg);
+    --btn-bg:var(--teal-neg); --btn-ink:#0F1C29; --btn-hover:#66E5D6;
+    --focus:var(--teal-neg);
+    --lift:0 1px 1px rgba(0,0,0,.4),0 14px 34px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0D131C; --ground-alt:#141D29; --plate:#16202F;
+  --ink:#E7EBF1; --ink-soft:#A3AEBE; --ink-faint:#7C8899;
+  --line:#232F40; --line-strong:#6B7A93; --card:#18222F;
+  --on-plate:#FFFFFF; --on-plate-soft:#AEB9C9;
+  --plate-line:rgba(255,255,255,.12);
+  --accent:var(--teal-neg); --rule:var(--teal-neg);
+  --btn-bg:var(--teal-neg); --btn-ink:#0F1C29; --btn-hover:#66E5D6;
+  --focus:var(--teal-neg);
+  --lift:0 1px 1px rgba(0,0,0,.4),0 14px 34px -18px rgba(0,0,0,.8);
+}
+
+#especializacion{--shot:url("/img/sectores.webp")}
+.tier--1 .photo{--shot:url("/img/nivel-1-estandar.webp")}
+.tier--2 .photo{--shot:url("/img/nivel-2-productividad.webp")}
+.tier--3 .photo{--shot:url("/img/nivel-3-workstation.webp")}
+.infra .photo{--shot:url("/img/infraestructura.webp")}
+
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:"IBM Plex Sans","Segoe UI","Helvetica Neue",Arial,sans-serif;
+  font-size:1rem;line-height:1.62;-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{margin:0;text-wrap:balance}
+h1{font-weight:700;font-size:clamp(2.35rem,1.3rem + 3.6vw,4.05rem);line-height:1.04;letter-spacing:-.035em}
+h2{font-weight:600;font-size:clamp(1.7rem,1.15rem + 2.1vw,2.7rem);line-height:1.13;letter-spacing:-.028em}
+h3{font-weight:600;font-size:1.0625rem;line-height:1.38;letter-spacing:-.012em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+.frame{width:100%;max-width:var(--frame);margin-inline:auto;padding-inline:clamp(22px,5vw,56px)}
+.mono{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-variant-numeric:tabular-nums}
+.sigbar{position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--rule);z-index:3}
+.sigbar--plate{background:var(--teal-neg)}
+
+/* ---------------- capa fotográfica ----------------
+   Se activa poniendo --shot en el contenedor. El duotono normaliza
+   cualquier foto al marino/teal de marca: no importa con qué color
+   venga la imagen, sale igual que las demás. */
+canvas[data-mesh]{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:1}
+
+/* El filtro va en una capa propia: si se aplica al contenedor, el
+   grayscale se ejecuta DESPUES del duotono y lo anula. */
+.shot{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;isolation:isolate}
+.shot::before{
+  content:"";position:absolute;inset:0;
+  background:var(--shot,none) center/cover no-repeat;
+  filter:grayscale(1) contrast(1.14) brightness(.84);opacity:.96;
+}
+.photo{position:relative;overflow:hidden;margin:0;isolation:isolate}
+.photo::before{
+  content:"";position:absolute;inset:0;
+  background:var(--shot,none) center/cover no-repeat;
+  filter:grayscale(1) contrast(1.0) brightness(.72);
+}
+.shot .tint,.photo .tint{
+  position:absolute;inset:0;
+  background:linear-gradient(135deg,#1B263B 0%,#0D9488 100%);
+  mix-blend-mode:color;opacity:.92;
+}
+.shot .tint{opacity:.58}
+.tier .photo{aspect-ratio:16/10;margin-bottom:3px}
+.infra .photo{aspect-ratio:4/3}
+.infra .body{display:grid;gap:12px}
+@media (min-width:820px){
+  .infra:has(.photo){grid-template-columns:minmax(0,320px) minmax(0,1fr);align-items:center;column-gap:clamp(28px,3.5vw,52px)}
+  .infra .photo{aspect-ratio:3/4}
+}
+
+/* grano fino: evita que el marino plano se lea como un bloque de CSS */
+.hero::before,.plate::before{
+  content:"";position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.plate{overflow:hidden}
+.plate .frame{position:relative;z-index:3}
+.plate .veil{
+  position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:linear-gradient(to right,#1B263B 0%,rgba(27,38,59,.9) 30%,rgba(27,38,59,.5) 62%,rgba(27,38,59,.15) 100%);
+}
+
+/* ---------------- portada ---------------- */
+.hero{position:relative;background:var(--marino);color:#fff;overflow:hidden;isolation:isolate;--shot:url("/img/portada-rack.webp")}
+.hero .veil{
+  position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:
+    linear-gradient(to top,rgba(27,38,59,.82) 0%,rgba(27,38,59,.3) 12%,rgba(27,38,59,0) 24%),
+    linear-gradient(to right,#1B263B 0%,rgba(27,38,59,.88) 26%,rgba(27,38,59,.32) 52%,rgba(27,38,59,0) 82%),
+    linear-gradient(to bottom,#1B263B 0%,rgba(27,38,59,.5) 18%,rgba(27,38,59,0) 42%);
+}
+.hero .frame{position:relative;z-index:3}
+.topbar{
+  display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap;
+  padding-block:26px;border-bottom:1px solid var(--plate-line);
+}
+.brandline{display:flex;flex-direction:column;align-items:flex-start;gap:7px}
+.lockup{display:inline-flex;align-items:center;gap:12px}
+.isotipo{height:34px;width:auto;display:block;flex:none}
+.wordmark{font-size:1.4rem;font-weight:700;letter-spacing:-.025em}
+@media(max-width:520px){.isotipo{height:28px}}
+.descriptor{font-size:.8125rem;color:var(--on-plate-soft);padding-left:46px}
+@media(max-width:520px){.descriptor{padding-left:40px}}
+.ruc{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-size:.75rem;color:var(--on-plate-soft);letter-spacing:.02em;padding-top:11px}
+
+.herobody{padding-block:clamp(64px,9vw,124px) clamp(56px,7vw,96px)}
+.kicker{
+  font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-size:.6875rem;font-weight:500;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--teal-neg);margin-bottom:26px;
+}
+.hero h1{max-width:15ch}
+.hero .sub{margin-top:26px;max-width:52ch;font-size:clamp(1.0625rem,.98rem + .42vw,1.3125rem);color:#D5DCE6;line-height:1.55}
+.tagline{
+  margin-top:34px;padding-left:16px;border-left:2px solid var(--teal-neg);
+  font-family:"IBM Plex Mono",Consolas,Menlo,monospace;color:var(--teal-neg);
+  font-size:clamp(.9375rem,.88rem + .3vw,1.0625rem);
+}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:15px 28px;font:inherit;font-weight:600;font-size:.9375rem;
+  border:1px solid transparent;cursor:pointer;text-decoration:none;
+  transition:background-color .18s ease,border-color .18s ease,color .18s ease;
+}
+.btn-primary{background:var(--btn-bg);color:var(--btn-ink)}
+.btn-primary:hover{background:var(--btn-hover)}
+.hero .btn-primary{background:var(--teal-neg);color:#0F1C29}
+.hero .btn-primary:hover{background:#66E5D6}
+.btn-ghost{border-color:var(--line-strong);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink)}
+.hero .btn-ghost{border-color:rgba(255,255,255,.32);color:#fff}
+.hero .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+
+.metastrip{
+  position:relative;z-index:3;border-top:1px solid var(--plate-line);
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+}
+.meta{padding:26px 0 30px;padding-right:26px}
+.meta dt{font-size:.6875rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--on-plate-soft);margin:0 0 8px}
+.meta dd{margin:0;font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-size:.875rem;color:#fff;line-height:1.55}
+
+/* ---------------- secciones ---------------- */
+section{padding-block:clamp(68px,8vw,124px)}
+.alt{background:var(--ground-alt)}
+.plate{background:var(--plate);color:var(--on-plate);position:relative}
+.plate .lede{color:var(--on-plate-soft)}
+.plate .secno{color:var(--teal-neg)}
+
+.sechead{display:flex;flex-direction:column;gap:16px;margin-bottom:clamp(40px,4.5vw,64px)}
+.secno{
+  font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-weight:600;font-size:.75rem;
+  color:var(--accent);letter-spacing:.16em;order:-1;
+}
+.lede{color:var(--ink-soft);font-size:clamp(1.0625rem,1rem + .3vw,1.1875rem);max-width:var(--measure)}
+
+/* argumentos */
+.stack{display:grid;gap:clamp(30px,3.2vw,44px)}
+.argument{display:grid;gap:11px;padding-left:24px;border-left:1px solid var(--line-strong)}
+.plate .argument{border-left-color:var(--plate-line)}
+.argument h3{font-size:1.125rem}
+.argument p{color:var(--ink-soft);max-width:58ch}
+.plate .argument p{color:var(--on-plate-soft)}
+
+/* tarjetas */
+.grid3{display:grid;gap:1px;background:var(--line);border-block:1px solid var(--line)}
+@media (min-width:700px){.grid3{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1020px){.grid3{grid-template-columns:repeat(3,1fr)}}
+.cell{background:var(--card);padding:clamp(26px,2.8vw,38px);display:grid;gap:12px;align-content:start;transition:background-color .2s ease}
+.cell:hover{background:var(--ground-alt)}
+.cell p{color:var(--ink-soft);font-size:.9375rem}
+.figure{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-weight:600;font-size:2rem;color:var(--accent);letter-spacing:-.03em;line-height:1;margin-bottom:4px}
+
+/* niveles de categoría */
+.tiers{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:clamp(30px,3.2vw,44px)}
+@media (min-width:760px){.tiers{grid-template-columns:repeat(3,1fr)}}
+.tier{background:var(--card);padding:clamp(26px,2.8vw,36px);display:grid;gap:13px;align-content:start;transition:background-color .2s ease}
+.tier:hover{background:var(--ground-alt)}
+.level{display:flex;align-items:flex-end;gap:5px;height:22px}
+.level i{display:block;width:9px;background:var(--line-strong);transition:background-color .2s ease}
+.level i:nth-child(1){height:9px}
+.level i:nth-child(2){height:15px}
+.level i:nth-child(3){height:22px}
+.level i.on{background:var(--accent)}
+.tierlabel{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-size:.6875rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.tier h3{font-size:1.1875rem}
+.tier p{color:var(--ink-soft);font-size:.9375rem}
+
+/* tabla */
+.tablewrap{overflow-x:auto;border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:.9375rem}
+thead th{background:var(--marino);color:#fff;text-align:left;font-weight:600;font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;padding:16px 22px;white-space:nowrap}
+tbody td{padding:20px 22px;vertical-align:top;border-top:1px solid var(--line);color:var(--ink-soft);background:var(--card);transition:background-color .18s ease}
+tbody tr:nth-child(even) td{background:var(--ground-alt)}
+tbody tr:hover td{background:var(--ground-alt)}
+tbody td:first-child{color:var(--ink);font-weight:600;white-space:nowrap}
+td.spec{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-size:.8125rem}
+.tablenote{margin-top:18px;font-size:.875rem;color:var(--ink-soft);max-width:var(--measure)}
+
+/* infraestructura */
+.infra{position:relative;background:var(--card);border:1px solid var(--line);padding:clamp(28px,3.2vw,44px);margin-top:clamp(30px,3.2vw,44px);display:grid;gap:14px;box-shadow:var(--lift)}
+.infra p{color:var(--ink-soft);max-width:58ch}
+
+/* proceso */
+.steps{border-top:1px solid var(--line)}
+.step{display:grid;grid-template-columns:auto 1fr;gap:14px 24px;padding-block:28px;border-bottom:1px solid var(--line);transition:background-color .18s ease}
+@media (min-width:840px){.step{grid-template-columns:64px minmax(0,16rem) minmax(0,1fr);gap:32px;align-items:baseline}}
+.step .n{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-weight:600;font-size:.875rem;color:var(--accent)}
+.step p{color:var(--ink-soft);grid-column:1/-1}
+@media (min-width:840px){.step p{grid-column:auto}}
+
+/* contacto */
+.split{display:grid;gap:clamp(28px,3.5vw,56px)}
+@media (min-width:880px){.split{grid-template-columns:minmax(0,8fr) minmax(0,4fr);align-items:start}}
+.formcard{position:relative;background:var(--card);border:1px solid var(--line);padding:clamp(26px,3vw,42px);box-shadow:var(--lift)}
+.formgrid{display:grid;gap:20px;grid-template-columns:1fr}
+@media (min-width:640px){.formgrid{grid-template-columns:1fr 1fr}}
+.field{display:grid;gap:8px}
+.field.wide{grid-column:1/-1}
+label{font-size:.6875rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+input,select,textarea{font:inherit;font-size:.9375rem;color:var(--ink);background:var(--ground);border:1px solid var(--line-strong);padding:12px 14px;width:100%;border-radius:0;transition:border-color .18s ease}
+input:hover,select:hover,textarea:hover{border-color:var(--ink-soft)}
+input:focus,select:focus,textarea:focus{border-color:var(--accent);outline:none}
+textarea{min-height:118px;resize:vertical}
+select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 15px) 50%;background-size:5px 5px,5px 5px;background-repeat:no-repeat;padding-right:40px}
+.formfoot{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:28px}
+.formnote{font-size:.8125rem;color:var(--ink-faint);max-width:42ch}
+.formnote a,.consent a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--line-strong)}
+.formnote a:hover,.consent a:hover{border-bottom-color:var(--accent)}
+.consent{display:flex;gap:11px;align-items:flex-start;margin-top:28px;max-width:60ch}
+.consent input{flex:none;width:17px;height:17px;margin-top:2px;accent-color:var(--teal-id)}
+.consent label{font-size:.875rem;font-weight:400;letter-spacing:0;text-transform:none;line-height:1.55;color:var(--ink-soft)}
+.consent input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.contactcard{display:grid;gap:28px;align-content:start}
+.cblock{display:grid;gap:6px}
+.cblock .k{font-size:.6875rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint)}
+.cblock .v{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-size:.9375rem;line-height:1.6}
+.cblock .v a{text-decoration:none;border-bottom:1px solid var(--line-strong)}
+.cblock .v a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+.waico{width:1em;height:1em;flex:none}
+.walink{display:inline-flex;align-items:center;gap:8px}
+.wafab{
+  position:fixed;right:20px;bottom:20px;z-index:50;
+  display:inline-flex;align-items:center;gap:10px;
+  padding:13px 18px;border-radius:999px;
+  background:var(--marino);color:#fff;text-decoration:none;
+  border:1px solid rgba(255,255,255,.24);
+  font-size:.875rem;font-weight:600;letter-spacing:-.01em;
+  box-shadow:0 6px 24px rgba(15,23,35,.28);
+  transition:background .18s,box-shadow .18s;
+}
+.wafab:hover{background:#0E1727;box-shadow:0 8px 30px rgba(15,23,35,.38)}
+.wafab:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+.waico--fab{width:19px;height:19px}
+@media(max-width:600px){
+  .wafab{right:14px;bottom:14px;padding:14px;gap:0}
+  .wafab span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .waico--fab{width:22px;height:22px}
+}
+@media print{.wafab{display:none}}
+.cdivider{width:44px;height:2px;background:var(--rule)}
+
+/* pie */
+footer{background:var(--marino);color:#fff;position:relative;padding-block:clamp(52px,5.5vw,76px)}
+.footgrid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px 48px;align-items:flex-end}
+.foottag{margin-top:16px;font-family:"IBM Plex Mono",Consolas,Menlo,monospace;color:var(--teal-neg);font-size:.9375rem}
+.footmeta{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-size:.8125rem;color:var(--on-plate-soft);line-height:1.9}
+.footmeta a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.26)}
+.footmeta a:hover{border-bottom-color:#fff;color:#fff}
+</style>
+<style>
+/* --- servicios.html --- */
+.hero--serv{--shot:url("/img/servicios-rindecuentas.webp")}
+.hero--serv .shot::before{filter:grayscale(1) contrast(1.06) brightness(.66);opacity:.9}
+.hero--serv .shot .tint{opacity:.72}
+.hero--serv .veil{
+  background:
+    linear-gradient(to top,rgba(27,38,59,.88) 0%,rgba(27,38,59,.42) 16%,rgba(27,38,59,.12) 30%),
+    linear-gradient(to right,#1B263B 0%,rgba(27,38,59,.9) 30%,rgba(27,38,59,.5) 60%,rgba(27,38,59,.24) 100%),
+    linear-gradient(to bottom,#1B263B 0%,rgba(27,38,59,.55) 16%,rgba(27,38,59,.18) 38%);
+}
+.hero--serv h1{max-width:19ch}
+.lockup{text-decoration:none;color:inherit}
+.prod{
+  border-top:1px solid var(--line);padding-top:clamp(28px,3.2vw,42px);
+  margin-top:clamp(30px,3.6vw,48px);display:grid;gap:clamp(18px,2.2vw,30px);
+}
+@media(min-width:860px){.prod{grid-template-columns:minmax(0,300px) minmax(0,1fr);column-gap:clamp(34px,4vw,64px)}}
+.prodhead h3{font-size:clamp(1.4rem,1.2rem + .8vw,1.95rem);letter-spacing:-.02em;margin-top:9px}
+.prodlead{margin-top:13px;color:var(--ink-soft);font-size:1.0625rem;line-height:1.55}
+.prodbody p{margin:0 0 15px;max-width:62ch}
+.ticks{margin:20px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+.ticks li{position:relative;padding-left:26px;color:var(--ink-soft);line-height:1.5}
+.ticks li::before{
+  content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;
+  background:var(--teal-txt);
+}
+#cotizacion .grid3 .cell{padding-bottom:6px}
+#cotizacion .actions{margin-top:clamp(28px,3vw,40px)}
+</style>
+</head>
+<body>
+
+<header class="hero hero--serv">
+  <span class="sigbar sigbar--plate" aria-hidden="true"></span>
+  <div class="shot" aria-hidden="true"><span class="tint"></span></div>
+  <span class="veil" aria-hidden="true"></span>
+
+  <div class="frame">
+    <div class="topbar">
+      <div class="brandline">
+        <a class="lockup" href="/" aria-label="Procesa · ir a la portada"><svg class="isotipo" viewBox="0 0 100 114" role="img" aria-label="Procesa"><path d="M20.25 99.6 V32 A7.25 7.25 0 0 1 27.5 24.75 H69.25 A7.25 7.25 0 0 1 76.5 32 V70.35 A7.25 7.25 0 0 1 69.25 77.6 H33" fill="none" stroke="#FFFFFF" stroke-width="15.5"/><rect x="11" y="50.3" width="19" height="2.2" fill="#1B263B"/><rect x="66" y="40.1" width="21" height="2.2" fill="#1B263B"/><rect x="33.4" y="86.7" width="11.3" height="12.9" fill="#2DD4BF"/></svg><span class="wordmark">Procesa</span></a>
+        <span class="descriptor">Equipos y soporte en operación</span>
+      </div>
+      <span class="ruc">RUC 20616422210</span>
+    </div>
+
+    <div class="herobody">
+      <p class="kicker">Soluciones digitales</p>
+      <h1>Cuando el problema no está en el equipo, sino en el proceso.</h1>
+      <p class="sub">Procesa tiene dos líneas. Una entrega equipos configurados con soporte incluido. La otra resuelve con software el proceso que corre encima: desarrollos a medida cuando la operación lo exige, y soluciones ya construidas que se implementan sobre el Microsoft 365 del propio cliente.</p>
+      <p class="tagline">Tres productos hoy en operación.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/#contacto">Solicitar una cotización</a>
+        <a class="btn btn-ghost" href="/">Ver equipos y soporte</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="frame">
+    <dl class="metastrip">
+      <div class="meta"><dt>Modelo</dt><dd>A medida · Reutilizable<br>Servicio administrado</dd></div>
+      <div class="meta"><dt>Dónde corre</dt><dd>Microsoft 365<br>del propio cliente</dd></div>
+      <div class="meta"><dt>Sus datos</dt><dd>Del cliente<br>Licencia de uso</dd></div>
+      <div class="meta"><dt>Cotización</dt><dd>Por proyecto<br>Levantamiento primero</dd></div>
+    </dl>
+  </div>
+</header>
+
+<!-- ========================= 01 ========================= -->
+<section id="enfoque">
+  <div class="frame">
+    <div class="sechead">
+      <span class="secno">01</span>
+      <h2>No vendemos software. Resolvemos el proceso que lo necesita.</h2>
+      <p class="lede">Un sistema que nadie usa cuesta lo mismo que uno que sí. La diferencia se decide antes de programar: en entender cómo trabaja hoy la operación, qué papel se firma, quién aprueba y dónde se pierde el tiempo. Por eso todo proyecto arranca con un levantamiento, y recién de ahí sale qué se construye y qué no hace falta construir.</p>
+    </div>
+    <div class="grid3">
+      <div class="cell">
+        <span class="tierlabel">Cuando el proceso es propio</span>
+        <h3>Desarrollo a medida</h3>
+        <p>Hay procesos que ninguna herramienta del mercado cubre porque son de esa empresa: su forma de contratar, su manera de aprobar, sus plazos. Ahí se construye a medida, sobre la infraestructura que el cliente ya paga.</p>
+      </div>
+      <div class="cell">
+        <span class="tierlabel">Cuando el proceso se repite</span>
+        <h3>Solución reutilizable</h3>
+        <p>Rendir gastos, controlar documentos y seguir vencimientos funcionan casi igual en toda operación de campo. Esas se construyen una vez y se implementan en cada cliente con su configuración, no desde cero.</p>
+      </div>
+      <div class="cell">
+        <span class="tierlabel">Cuando hay que operarlo</span>
+        <h3>Servicio administrado</h3>
+        <p>Entregar un sistema y desaparecer no resuelve nada. Procesa puede quedarse operando el servicio: mantenimiento, soporte al usuario y la evolución que el proceso pida cuando cambie.</p>
+      </div>
+    </div>
+    <p class="tablenote"><strong>El levantamiento se cotiza y se entrega como trabajo propio.</strong> No es una visita comercial gratuita: es donde se define el alcance, y su resultado sirve incluso si después no se contrata el desarrollo.</p>
+  </div>
+</section>
+
+<!-- ========================= 02 ========================= -->
+<section id="productos" class="alt">
+  <div class="frame">
+    <div class="sechead">
+      <span class="secno">02</span>
+      <h2>Tres productos en operación.</h2>
+      <p class="lede">No son maquetas ni planes. Son los tres sistemas que Procesa tiene corriendo hoy, y son también la base de lo que se implementa en un cliente nuevo.</p>
+    </div>
+
+    <article class="prod">
+      <div class="prodhead">
+        <span class="tierlabel">Una solución de Procesa</span>
+        <h3>Rindecuentas</h3>
+        <p class="prodlead">Rendiciones de gasto de campo, desde la foto del comprobante hasta el informe aprobado y el saldo cerrado.</p>
+      </div>
+      <div class="prodbody">
+        <p>El que gasta fotografía el comprobante y de esa misma foto se lee el QR de SUNAT, así que el dato entra una sola vez y entra bien. Los gastos se agrupan en un informe numerado que aprueba la línea de mando y registra contabilidad, y los fondos entregados se cierran contra número de operación, sin saldos sueltos arrastrándose de mes a mes.</p>
+        <p>Funciona en el celular, en faena y sin señal: lo que se registra queda en cola y sube al volver a cobertura. Es la diferencia entre rendir en el momento y rendir de memoria diez días después, con los papeles arrugados en el bolsillo.</p>
+        <ul class="ticks">
+          <li>Lectura del QR de SUNAT desde la foto del comprobante</li>
+          <li>Informe numerado, con aprobación de la línea de mando</li>
+          <li>Fondos entregados cerrados contra número de operación</li>
+          <li>Registro en faena sin señal, con cola de subida</li>
+          <li>Imputación por centro de costo</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="prod">
+      <div class="prodhead">
+        <span class="tierlabel">Desarrollo a medida</span>
+        <h3>Sistema de Recursos Humanos</h3>
+        <p class="prodlead">La gestión del personal desde el onboarding hasta el ciclo mensual, con trazabilidad de cada paso.</p>
+      </div>
+      <div class="prodbody">
+        <p>Digitaliza el ingreso de una persona y todo lo que viene después: movimientos, renovaciones y los avisos del mes. Cada paso deja registro, de modo que se puede reconstruir qué pasó con un legajo sin depender de la memoria de quien lo llevaba.</p>
+        <p>Los documentos con vencimiento avisan antes de vencer. Eso es lo que evita el problema clásico de una operación con personal en campo: enterarse de que un examen médico o una inducción caducó el día que alguien no puede entrar a planta.</p>
+        <ul class="ticks">
+          <li>Onboarding con expediente digital del trabajador</li>
+          <li>Ciclo mensual de movimientos y renovaciones</li>
+          <li>Alertas de vencimiento antes de la fecha</li>
+          <li>Trazabilidad de cada cambio, con responsable y fecha</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="prod">
+      <div class="prodhead">
+        <span class="tierlabel">Servicio administrado</span>
+        <h3>Servicio documental</h3>
+        <p class="prodlead">La documentación de la empresa y de sus proyectos, centralizada, clasificada y con vigencia controlada.</p>
+      </div>
+      <div class="prodbody">
+        <p>Centraliza, organiza y controla la documentación: clasificación, búsqueda, control de vigencia y seguimiento de pendientes. No es un repositorio más, es la disciplina de que cada documento tenga un solo original vigente y un lugar donde vive la versión anterior.</p>
+        <p>En una homologación no se revisa que los documentos existan. Se revisa que se pueda demostrar cuál es el vigente, desde cuándo y quién lo cambió. Esa es la pregunta que este servicio contesta en minutos en vez de en días.</p>
+        <ul class="ticks">
+          <li>Clasificación y búsqueda sobre el repositorio del cliente</li>
+          <li>Control de vigencia, con la versión anterior archivada</li>
+          <li>Seguimiento de pendientes documentales</li>
+          <li>Evidencia lista para una auditoría u homologación</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ========================= 03 ========================= -->
+<section id="donde">
+  <div class="frame">
+    <div class="sechead">
+      <span class="secno">03</span>
+      <h2>Corre sobre el Microsoft 365 que usted ya paga.</h2>
+      <p class="lede">Las soluciones ya construidas se implementan dentro del entorno del propio cliente, no en una plataforma ajena a la que hay que mudarse. Eso cambia tres cosas concretas.</p>
+    </div>
+    <div class="grid3">
+      <div class="cell">
+        <span class="figure">01</span>
+        <h3>Los datos no salen de su casa</h3>
+        <p>La información vive donde ya vive el resto de su operación, bajo sus propias reglas de acceso y sus propias copias de respaldo.</p>
+      </div>
+      <div class="cell">
+        <span class="figure">02</span>
+        <h3>Se entra con el usuario de siempre</h3>
+        <p>Sin una contraseña más que administrar. Quien sale de la empresa pierde el acceso el mismo día, por el mismo camino que pierde el correo.</p>
+      </div>
+      <div class="cell">
+        <span class="figure">03</span>
+        <h3>No se paga dos veces la misma capa</h3>
+        <p>Se aprovecha la licencia que la empresa ya tiene en lugar de sumar una plataforma nueva con su propio costo por usuario.</p>
+      </div>
+    </div>
+    <p class="tablenote"><strong>Un desarrollo a medida puede vivir fuera de ese entorno</strong> cuando el proceso lo exige. La decisión se toma en el levantamiento, con el criterio explícito y por escrito, no por defecto.</p>
+  </div>
+</section>
+
+<!-- ========================= 04 ========================= -->
+<section id="propiedad" class="alt">
+  <div class="frame">
+    <div class="sechead">
+      <span class="secno">04</span>
+      <h2>Sus datos son suyos. El código es de Procesa.</h2>
+      <p class="lede">Conviene decirlo antes de firmar y no después, porque es la pregunta que aparece siempre en la segunda reunión.</p>
+    </div>
+    <div class="grid3">
+      <div class="cell">
+        <span class="tierlabel">Del cliente</span>
+        <h3>Los datos</h3>
+        <p>Toda la información que se carga o se genera en la solución es del cliente, y se le entrega si el servicio termina.</p>
+      </div>
+      <div class="cell">
+        <span class="tierlabel">Del cliente</span>
+        <h3>La licencia de uso</h3>
+        <p>El cliente recibe licencia de uso sobre la solución implementada, con el alcance y el plazo que fije el contrato.</p>
+      </div>
+      <div class="cell">
+        <span class="tierlabel">De Procesa</span>
+        <h3>El código y los componentes</h3>
+        <p>Procesa conserva la propiedad del código base, los módulos reutilizables, la metodología y los componentes generales, y puede reutilizarlos sin revelar información confidencial de ningún cliente.</p>
+      </div>
+    </div>
+    <p class="tablenote"><strong>Por qué importa para el precio.</strong> Un componente que ya existe se implementa; no se vuelve a construir. Eso es lo que permite que una solución reutilizable cueste menos que un desarrollo desde cero — y es exactamente lo que se pierde si cada cliente se lleva el código.</p>
+  </div>
+</section>
+
+<!-- ========================= 05 ========================= -->
+<section id="cotizacion">
+  <div class="frame">
+    <div class="sechead">
+      <span class="secno">05</span>
+      <h2>Cómo se cobra.</h2>
+      <p class="lede">Cada proyecto se cotiza por separado y puede combinar estas formas, según lo que la operación necesite. No hay una lista de precios: hay un alcance que se define primero.</p>
+    </div>
+    <div class="grid3">
+      <div class="cell"><span class="figure">01</span><h3>Levantamiento y diseño</h3><p>Entender el proceso y definir el alcance. Se entrega como trabajo, con o sin desarrollo posterior.</p></div>
+      <div class="cell"><span class="figure">02</span><h3>Implementación inicial</h3><p>Construir o configurar la solución, cargar los datos maestros y dejarla operando con usuarios reales.</p></div>
+      <div class="cell"><span class="figure">03</span><h3>Licencia periódica</h3><p>El derecho de uso de una solución ya construida, mientras el servicio esté vigente.</p></div>
+      <div class="cell"><span class="figure">04</span><h3>Soporte y mantenimiento</h3><p>Atención al usuario y mantenimiento mensual, para que el sistema siga funcionando cuando cambie el entorno.</p></div>
+      <div class="cell"><span class="figure">05</span><h3>Mejoras y desarrollos adicionales</h3><p>Lo que aparece después de operar unos meses, cotizado aparte para que se decida con el costo a la vista.</p></div>
+      <div class="cell"><span class="figure">06</span><h3>Una combinación</h3><p>Lo habitual: implementación, licencia y soporte juntos en un solo esquema mensual.</p></div>
+    </div>
+    <p class="tablenote"><strong>Escríbanos sin tener el proyecto definido.</strong> La primera conversación sirve justamente para eso: entender qué se está intentando resolver y decir con franqueza si Procesa es el camino o no lo es.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/#contacto">Solicitar una cotización</a>
+      <a class="btn btn-ghost" href="https://wa.me/51940886429?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20las%20soluciones%20digitales%20de%20Procesa." target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= PIE ========================= -->
+<footer>
+  <span class="sigbar sigbar--plate" aria-hidden="true"></span>
+  <div class="frame">
+    <div class="footgrid">
+      <div>
+        <div class="brandline">
+          <span class="lockup"><svg class="isotipo" viewBox="0 0 100 114" role="img" aria-label="Procesa"><path d="M20.25 99.6 V32 A7.25 7.25 0 0 1 27.5 24.75 H69.25 A7.25 7.25 0 0 1 76.5 32 V70.35 A7.25 7.25 0 0 1 69.25 77.6 H33" fill="none" stroke="#FFFFFF" stroke-width="15.5"/><rect x="11" y="50.3" width="19" height="2.2" fill="#1B263B"/><rect x="66" y="40.1" width="21" height="2.2" fill="#1B263B"/><rect x="33.4" y="86.7" width="11.3" height="12.9" fill="#2DD4BF"/></svg><span class="wordmark">Procesa</span></span>
+          <span class="descriptor">Equipos y soporte en operación</span>
+        </div>
+        <p class="foottag">Tu operación nunca se detiene.</p>
+      </div>
+      <p class="footmeta">
+        Procesa Tech SAC · RUC 20616422210<br>
+        Lima, Perú<br>
+        <a href="mailto:comercial@procesa.com.pe">comercial@procesa.com.pe</a><br>
+        <a href="tel:+51940886429">+51 940 886 429</a><br>
+        procesa.com.pe<br>
+        <a href="/privacidad.html">Aviso de privacidad</a>
+      </p>
+    </div>
+  </div>
+</footer>
+<a class="wafab" href="https://wa.me/51940886429?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20el%20renting%20de%20equipos%20de%20Procesa." target="_blank" rel="noopener" aria-label="Escribir a Procesa por WhatsApp"><svg class="waico waico--fab" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg><span>WhatsApp</span></a>
+
+</body>
+</html>
