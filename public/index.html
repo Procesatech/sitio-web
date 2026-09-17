@@ -150,16 +150,17 @@ canvas[data-mesh]{position:absolute;inset:0;width:100%;height:100%;display:block
 }
 .hero .frame{position:relative;z-index:3}
 .topbar{
-  display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;
+  display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap;
   padding-block:26px;border-bottom:1px solid var(--plate-line);
 }
-.brandline{display:flex;align-items:baseline;gap:13px;flex-wrap:wrap}
+.brandline{display:flex;flex-direction:column;align-items:flex-start;gap:7px}
 .lockup{display:inline-flex;align-items:center;gap:12px}
 .isotipo{height:34px;width:auto;display:block;flex:none}
 .wordmark{font-size:1.4rem;font-weight:700;letter-spacing:-.025em}
 @media(max-width:520px){.isotipo{height:28px}}
-.descriptor{font-size:.8125rem;color:var(--on-plate-soft)}
-.ruc{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-size:.75rem;color:var(--on-plate-soft);letter-spacing:.02em}
+.descriptor{font-size:.8125rem;color:var(--on-plate-soft);padding-left:46px}
+@media(max-width:520px){.descriptor{padding-left:40px}}
+.ruc{font-family:"IBM Plex Mono",Consolas,Menlo,monospace;font-size:.75rem;color:var(--on-plate-soft);letter-spacing:.02em;padding-top:11px}
 
 .herobody{padding-block:clamp(64px,9vw,124px) clamp(56px,7vw,96px)}
 .kicker{
@@ -350,6 +351,7 @@ footer{background:var(--marino);color:#fff;position:relative;padding-block:clamp
       <p class="tagline">Tu operación nunca se detiene.</p>
       <div class="actions">
         <a class="btn btn-primary" href="#contacto">Solicitar una propuesta</a>
+        <a class="btn btn-ghost" href="/servicios.html">Ver servicios</a>
         <a class="btn btn-ghost" href="#categorias">Ver categorías de equipo</a>
       </div>
     </div>
@@ -585,26 +587,28 @@ footer{background:var(--marino);color:#fff;position:relative;padding-block:clamp
     <div class="sechead">
       <span class="secno">07</span>
       <h2>Equipos y soporte es una línea. Soluciones digitales es la otra.</h2>
-      <p class="lede">Cuando el problema no está en el equipo sino en el proceso que corre encima, Procesa lo resuelve con software propio: desarrollos a medida cuando la operación lo exige, y soluciones ya construidas que se implementan sobre el Microsoft 365 del propio cliente, no en una plataforma ajena. Es una línea en marcha, con tres productos hoy en operación.</p>
+      <p class="lede">Cuando el problema no está en el equipo sino en el proceso que corre encima, Procesa lo resuelve con software propio. Es una línea en marcha, con tres productos hoy en operación.</p>
     </div>
     <div class="grid3">
       <div class="cell">
         <span class="tierlabel">Una solución de Procesa</span>
         <h3>Rindecuentas</h3>
-        <p>Rendiciones de gasto de campo. Se fotografía el comprobante y de esa misma foto se lee el QR de SUNAT; los gastos se agrupan en un informe numerado que aprueba la línea de mando y registra contabilidad. Los fondos entregados se cierran contra número de operación, sin saldos sueltos. Funciona en el celular, en faena y sin señal: la cola sube al volver a cobertura.</p>
+        <p>Rendiciones de gasto de campo, desde la foto del comprobante hasta el informe aprobado.</p>
       </div>
       <div class="cell">
         <span class="tierlabel">Desarrollo a medida</span>
         <h3>Sistema de Recursos Humanos</h3>
-        <p>Digitaliza la gestión del personal desde el onboarding hasta el ciclo mensual de movimientos, renovaciones y alertas. Cada paso deja registro, los documentos con vencimiento avisan antes de vencer, y nadie tiene que acordarse de perseguir a nadie.</p>
+        <p>Del onboarding al ciclo mensual de movimientos, renovaciones y alertas, con registro de cada paso.</p>
       </div>
       <div class="cell">
         <span class="tierlabel">Servicio administrado</span>
         <h3>Servicio documental</h3>
-        <p>Centraliza, organiza y controla la documentación de la empresa y sus proyectos: clasificación, búsqueda, vigencia y seguimiento de pendientes. En una homologación no se revisa que los documentos existan, sino que se pueda demostrar cuál es el vigente, desde cuándo y quién lo cambió.</p>
+        <p>Clasificación, búsqueda, vigencia y seguimiento de pendientes, con trazabilidad de cada versión.</p>
       </div>
     </div>
-    <p class="tablenote"><strong>Sus datos son suyos.</strong> Procesa conserva la propiedad del código y de los componentes reutilizables; el cliente conserva sus datos y recibe licencia de uso sobre la solución. Cada implementación se cotiza por proyecto y puede combinar levantamiento y diseño, implementación inicial, licencia periódica y soporte mensual, según lo que la operación necesite.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/servicios.html">Ver la línea completa</a>
+    </div>
   </div>
 </section>
 
